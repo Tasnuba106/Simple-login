@@ -10,8 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText username;
-    EditText password;
+    EditText phone;
     Button loginButton;
 
     @Override
@@ -19,13 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
+        phone = findViewById(R.id.phone);
+
         loginButton = findViewById(R.id.loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("user") && password.getText().toString().equals("1234")) {
+                if (phone.getText().toString().equals("01963696329") ) {
                     Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
