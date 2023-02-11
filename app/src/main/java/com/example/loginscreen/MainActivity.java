@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (phone.getText().toString().equals("01963696329") ) {
-                    Toast.makeText(MainActivity.this, "Login Successful!", Toast.LENGTH_SHORT).show();
+                if (phone.getText().toString().equals("01963696329") || phone.getText().toString().equals("01764186880")) {
+                    Toast.makeText(MainActivity.this, "Verified Successful! 👌", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "Login Failed!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Verified Unsuccessful! 😒", Toast.LENGTH_SHORT).show();
                 }
             }
         });
