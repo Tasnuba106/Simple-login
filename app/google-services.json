@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "170612014969",
+    "project_id": "plastic-d6a5d",
+    "storage_bucket": "plastic-d6a5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170612014969:android:e5f911f2c27d0f8c4779a8",
+        "android_client_info": {
+          "package_name": "com.example.loginscreen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170612014969-72fng8goht9ms51d55t1cs6r7rcanqlg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzpsZfs98Phk_rZvO553PqD60biFVOKmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "170612014969-72fng8goht9ms51d55t1cs6r7rcanqlg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
