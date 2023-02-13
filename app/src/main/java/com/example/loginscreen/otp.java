@@ -1,8 +1,6 @@
 package com.example.loginscreen;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -10,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
-
 import com.example.loginscreen.databinding.ActivityOtpBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -21,9 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
-
 import java.util.concurrent.TimeUnit;
-
 public class otp extends AppCompatActivity {
     ActivityOtpBinding binding;
     FirebaseAuth auth;
@@ -46,15 +41,9 @@ public class otp extends AppCompatActivity {
                 .setActivity(otp.this)
                 .setCallbacks(new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
                     @Override
-                    public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-
-                    }
-
+                    public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {}
                     @Override
-                    public void onVerificationFailed(@NonNull FirebaseException e) {
-
-                    }
-
+                    public void onVerificationFailed(@NonNull FirebaseException e) {}
                     @Override
                     public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                         super.onCodeSent(s, forceResendingToken);
@@ -64,8 +53,7 @@ public class otp extends AppCompatActivity {
                         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
                         binding.otptext.requestFocus();
                     }
-                })
-                .build();
+                }).build();
         PhoneAuthProvider.verifyPhoneNumber(options);
         binding.otpverifybtn.setOnClickListener(new View.OnClickListener() {
             @Override

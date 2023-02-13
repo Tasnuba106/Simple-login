@@ -1,5 +1,4 @@
 package com.example.loginscreen;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,7 +12,6 @@ import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-
     EditText phone;
     Button loginButton;
     FirebaseAuth auth;
