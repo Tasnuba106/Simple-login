@@ -7,8 +7,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/background"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="-120dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/mobile_auth" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -18,54 +27,46 @@
         app:cardElevation="20dp"
         android:background="@drawable/custom_edittext">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_width="351dp"
+            android:layout_height="280dp"
             android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
             android:padding="24dp">
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Login"
                 android:id="@+id/loginText"
-                android:textSize="36sp"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:text="Verify your Number"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/purple"/>
+                android:textColor="@color/purple"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
             <EditText
+                android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:id="@+id/phone"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/custom_edittext"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/phone"
                 android:drawablePadding="8dp"
                 android:hint="Phone"
                 android:padding="8dp"
                 android:textColor="@color/black"
-                android:textColorHighlight="@color/cardview_dark_background"
-                android:layout_marginTop="40dp"/>
+                android:textColorHighlight="@color/cardview_dark_background" />
 
             <Button
+                android:id="@+id/loginButton"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/loginButton"
-                android:text="Login"
-                android:textSize="18sp"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/purple"
-                app:cornerRadius = "20dp"/>
+                android:text="Verify"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="Not yet registered? SignUp Now"
-        android:textSize="14sp"
-        android:textAlignment="center"
-        android:id="@+id/signupText"
-        android:textColor="@color/purple"
-        android:layout_marginBottom="20dp"/>
 
 
 </LinearLayout>
